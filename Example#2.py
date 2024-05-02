@@ -1,6 +1,6 @@
 # Example 2 - Decrementing
 
-i = 5
+i = 6
 while i > 0:
   print(i)
-  i -= 1
+  i += 1

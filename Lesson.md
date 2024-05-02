@@ -98,9 +98,9 @@ while guess != my_num:
   print("Sorry, wrong number")
 ```
 What's happening when we run this program?
->
+>The program loops for inf
 Why?
->
+>The variable that affect the while statement is always true
 
 <span style="color: red">
 <b>NOTE:</b> It is important to make sure the condition has a chance to change/update during the while loop. If it doesn't, it could result in an <b>infinite loop</b>
@@ -115,8 +115,28 @@ Why?
 Correct attempt:
 ```
 Pseudocode:
+ask user for a guess
+while guess is not correct:
+  if guess is too high:
+    print too high
+  else:
+    print too low
+  ask for another guess
 
+print congradulations
 ```
 ```python
+import random
 
+my_num = random.randrange(1,101)
+guess = my_num/2
+print(my_num)
+while guess != my_num:
+  guess = int(input("Enter guess: "))
+  if guess < my_num:
+    print ("too low")
+  else:
+    print ("too high")
+  print ("try again")
+print ("congradulations you got it")
 ```
